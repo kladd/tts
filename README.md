@@ -18,7 +18,7 @@ func main() {
 	speaker := new(gtts.Speaker)
 	speaker.Say("Hello, World!")
 
-	aspeaker := tts.MakeAsync(new(gtts.Speaker))
+	aspeaker := tts.MakeAsync(speaker)
 	aspeaker.Say("Hello, asynchronous World!")
 	<-aspeaker.Done
 }
