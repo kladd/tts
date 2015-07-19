@@ -4,7 +4,7 @@ A simple text to speech library for Go applications.
 
 ### Example
 
-The example below uses the Google text to speech driver provided by the included [gtts](./gtts) package (currently the only implementation).
+The example below uses the Google text to speech driver provided by the included [gtts](./gtts) package. See the [Engines](#engines) section for available text to speech engines.
 
 Playback can be done asynchronously if you choose as shown below. Currently language is configured by changing the constant in `tts.go`.
 
@@ -24,6 +24,11 @@ func main() {
 }
 
 ```
+
+### Engines
+
+* Google - [gtts](./gtts)
+* Apple (Darwin only) - [atts](./atts)
 
 ### Caveats
 
